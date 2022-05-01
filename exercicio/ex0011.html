@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nacionalidade</title>
+    <style>
+        body{
+            background: pink;
+            font: normal 20pt arial;
+            width: 3000px;        }
+            div {
+                font: normal 19pt arial;
+            }
+            input{
+                color: rgb(255, 0, 0);
+            }
+            
+    </style>
+
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Qual é o seu país? <input type="text" name="tex1" id="tex1">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res"> <strong>Resposta</strong></div>
+    <script>
+        
+                
+          function clicar() {
+            var país = window.document.getElementById("tex1")
+            var resultado = (país.value)
+            var resposta = window.document.getElementById("res")
+            //var bra = ("brasil"). Serve pra nada kkk
+           // var s = resultado == bra. Serve pra nada kkk
+            //resposta.innerHTML = ("voce é <strong> Brasileiro! <strong> ")
+
+ 
+        
+            if (resultado == "Brasil"){
+             resposta.innerHTML = `<p> Voce é br  <p>`}
+                else if ( resultado == "USA"){
+                    resposta.innerHTML = `<p> Voce é americano <p>`
+                    } else {
+                            resposta.innerHTML =` <p> voce é estrangeiro <p>`
+                        }
+
+                }
+                         
+                
+                
+            
+
+
+
+             
+            
+    </script>
+
+    
+</body>
+</html>

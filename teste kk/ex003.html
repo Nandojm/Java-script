@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <style>
+        div#area {
+            background: pink;
+            color: blue;
+            width: 200px;
+            height: 200px;
+            line-height: 200px; 
+            text-align: center;
+          /*  font: normal 15pt arial;*/
+
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja
+
+    </div>
+    <script>
+         var area = window.document.getElementById ("area")
+         area.addEventListener ("click", clicar)
+         area.addEventListener("mouseenter",entrar)
+         area.addEventListener("mouseout",sair)
+        function clicar (){
+            area.innerText = "clicou"
+            area.style.background = "red"
+
+        }
+        function entrar(){
+            area.innerText = "interaja"
+            
+            
+        }
+        function sair () {
+            area.innerText = "interaja"
+            area.style.background = "pink"
+        }
+    </script>
+</body>
+</html>
